@@ -7,13 +7,16 @@ class NotesViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        SizedBox(
-          height: 50,
-        ),
-        CutomAppBar()
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 23),
+      child: Column(
+        children: const [
+          SizedBox(
+            height: 50,
+          ),
+          CutomAppBar()
+        ],
+      ),
     );
   }
 }
