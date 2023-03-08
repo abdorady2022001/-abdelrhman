@@ -6,10 +6,12 @@ class CutomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
+      children: const [
         Text(
           'Notes',
-          style: TextStyle(),
+          style: TextStyle(
+            fontSize: 28,
+          ),
         )
       ],
     );

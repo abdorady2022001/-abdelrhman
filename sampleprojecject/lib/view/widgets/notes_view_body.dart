@@ -8,7 +8,12 @@ class NotesViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [CutomAppBar()],
+      children: const [
+        SizedBox(
+          height: 50,
+        ),
+        CutomAppBar()
+      ],
     );
   }
 }
