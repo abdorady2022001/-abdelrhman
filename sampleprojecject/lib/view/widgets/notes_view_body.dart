@@ -14,9 +14,47 @@ class NotesViewBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          CutomAppBar()
+          CutomAppBar(),
+          NoteItem(),
         ],
       ),
+    );
+  }
+}
+
+class NoteItem extends StatelessWidget {
+  const NoteItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.yellow,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+        ListTile(
+          title: Text(
+            'flutter tips',
+            style: TextStyle(color: Colors.black),
+          ),
+          subtitle: Text(
+            'buid your caeer with tharwat samy',
+            style: TextStyle(color: Colors.black54),
+          ),
+          trailing: IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.delete,
+              color: Colors.black87,
+            ),
+          ),
+        ),
+        Text(
+          'May 12,2023',
+          style: TextStyle(color: Colors.black54),
+        ),
+      ]),
     );
   }
 }
